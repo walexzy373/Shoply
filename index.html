@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Shoply — Modern Shopping</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header class="header">
+
+  <div class="container nav">
+
+    <a href="#home" class="logo">
+      SHOP<span>LY</span>
+    </a>
+
+    <nav class="desktop-nav">
+      <a href="#shop">Shop</a>
+      <a href="#categories">Categories</a>
+      <a href="#deals">Deals</a>
+    </nav>
+
+    <div class="nav-actions">
+
+      <button class="search-btn" id="searchBtn" aria-label="Search">
+        ⌕
+      </button>
+
+      <button class="cart-btn" id="cartBtn" aria-label="Shopping cart">
+        🛒
+        <span id="cartCount">0</span>
+      </button>
+
+      <button class="menu-btn" id="menuBtn" aria-label="Open menu">
+        ☰
+      </button>
+
+    </div>
+
+  </div>
+
+  <div class="mobile-menu" id="mobileMenu">
+
+    <a href="#shop">Shop</a>
+    <a href="#categories">Categories</a>
+    <a href="#deals">Deals</a>
+    <a href="#contact">Contact</a>
+
+  </div>
+
+</header>
+
+
+<main>
+
+<section class="hero" id="home">
+
+  <div class="container hero-grid">
+
+    <div class="hero-content">
+
+      <p class="eyebrow">NEW COLLECTION 2025</p>
+
+      <h1>
+        Everything you want.
+        <span>All in one place.</span>
+      </h1>
+
+      <p class="hero-text">
+        Discover carefully selected products designed to fit your lifestyle.
+        Simple shopping, modern products and a better way to buy.
+      </p>
+
+      <div class="hero-buttons">
+
+        <a href="#shop" class="btn primary">
+          Shop Now →
+        </a>
+
+        <a href="#categories" class="btn secondary">
+          Explore Categories
+        </a>
+
+      </div>
+
+      <div class="hero-trust">
+
+        <div>
+          <strong>10k+</strong>
+          <small>Products</small>
+        </div>
+
+        <div>
+          <strong>25k+</strong>
+          <small>Customers</small>
+        </div>
+
+        <div>
+          <strong>4.9/5</strong>
+          <small>Rating</small>
+        </div>
+
+      </div>
+
+    </div>
+
+
+    <div class="hero-product">
+
+      <div class="hero-card">
+
+        <span class="discount">-30%</span>
+
+        <div class="shoe">👟</div>
+
+        <p>Urban Runner X</p>
+
+        <strong>$89.00</strong>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<section class="categories section" id="categories">
+
+  <div class="container">
+
+    <div class="section-heading">
+
+      <div>
+
+        <p class="eyebrow">SHOP BY CATEGORY</p>
+
+        <h2>Find what fits you.</h2>
+
+      </div>
+
+    </div>
+
+
+    <div class="category-grid">
+
+      <div class="category-card">
+
+        <span>👕</span>
+
+        <h3>Fashion</h3>
+
+        <p>Modern everyday essentials.</p>
+
+        <a href="#shop">Explore →</a>
+
+      </div>
+
+
+      <div class="category-card">
+
+        <span>💻</span>
+
+        <h3>Electronics</h3>
+
+        <p>Smart tech for modern life.</p>
+
+        <a href="#shop">Explore →</a>
+
+      </div>
+
+
+      <div class="category-card">
+
+        <span>🏠</span>
+
+        <h3>Home</h3>
+
+        <p>Make your space feel better.</p>
+
+        <a href="#shop">Explore →</a>
+
+      </div>
+
+
+      <div class="category-card">
+
+        <span>🎒</span>
+
+        <h3>Accessories</h3>
+
+        <p>Small details, big difference.</p>
+
+        <a href="#shop">Explore →</a>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<section class="shop section" id="shop">
+
+  <div class="container">
+
+    <div class="section-heading">
+
+      <div>
+
+        <p class="eyebrow">POPULAR PRODUCTS</p>
+
+        <h2>Trending right now.</h2>
+
+      </div>
+
+      <button class="filter-btn" id="filterBtn">
+        Filter Products
+      </button>
+
+    </div>
+
+
+    <div class="product-grid">
+
+
+      <article class="product-card" data-category="fashion">
+
+        <div class="product-image purple">
+          👟
+        </div>
+
+        <div class="product-info">
+
+          <span>Fashion</span>
+
+          <h3>Urban Runner X</h3>
+
+          <div class="rating">
+            ★★★★★
+          </div>
+
+          <div class="price-row">
+
+            <strong>$89</strong>
+
+            <button
+              class="add-btn"
+              data-name="Urban Runner X">
+              +
+            </button>
+
+          </div>
+
+        </div>
+
+      </article>
+
+
+      <article class="product-card" data-category="electronics">
+
+        <div class="product-image blue">
+          🎧
+        </div>
+
+        <div class="product-info">
+
+          <span>Electronics</span>
+
+          <h3>Pulse Headphones</h3>
+
+          <div class="rating">
+            ★★★★★
+          </div>
+
+          <div class="price-row">
+
+            <strong>$129</strong>
+
+            <button
+              class="add-btn"
+              data-name="Pulse Headphones">
+              +
+            </button>
+
+          </div>
+
+        </div>
+
+      </article>
+
+
+      <article class="product-card" data-category="home">
+
+        <div class="product-image orange">
+          💡
+        </div>
+
+        <div class="product-info">
+
+          <span>Home</span>
+
+          <h3>Glow Table Lamp</h3>
+
+          <div class="rating">
+            ★★★★☆
+          </div>
+
+          <div class="price-row">
+
+            <strong>$54</strong>
+
+            <button
+              class="add-btn"
+              data-name="Glow Table Lamp">
+              +
+            </button>
+
+          </div>
+
+        </div>
+
+      </article>
+
+
+      <article class="product-card" data-category="accessories">
+
+        <div class="product-image green">
+          ⌚
+        </div>
+
+        <div class="product-info">
+
+          <span>Accessories</span>
+
+          <h3>Core Smartwatch</h3>
+
+          <div class="rating">
+            ★★★★★
+          </div>
+
+          <div class="price-row">
+
+            <strong>$149</strong>
+
+            <button
+              class="add-btn"
+              data-name="Core Smartwatch">
+              +
+            </button>
+
+          </div>
+
+        </div>
+
+      </article>
+
+
+      <article class="product-card" data-category="fashion">
+
+        <div class="product-image pink">
+          🧥
+        </div>
+
+        <div class="product-info">
+
+          <span>Fashion</span>
+
+          <h3>Essential Jacket</h3>
+
+          <div class="rating">
+            ★★★★★
+          </div>
+
+          <div class="price-row">
+
+            <strong>$99</strong>
+
+            <button
+              class="add-btn"
+              data-name="Essential Jacket">
+              +
+            </button>
+
+          </div>
+
+        </div>
+
+      </article>
+
+
+      <article class="product-card" data-category="electronics">
+
+        <div class="product-image dark">
+          📷
+        </div>
+
+        <div class="product-info">
+
+          <span>Electronics</span>
+
+          <h3>Mini Creator Cam</h3>
+
+          <div class="rating">
+            ★★★★☆
+          </div>
+
+          <div class="price-row">
+
+            <strong>$199</strong>
+
+            <button
+              class="add-btn"
+              data-name="Mini Creator Cam">
+              +
+            </button>
+
+          </div>
+
+        </div>
+
+      </article>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<section class="deal section" id="deals">
+
+  <div class="container deal-box">
+
+    <div>
+
+      <p class="eyebrow">LIMITED TIME</p>
+
+      <h2>
+        Big savings.<br>
+        Small window.
+      </h2>
+
+      <p>
+        Get up to 40% off selected products this week.
+      </p>
+
+      <button class="btn primary" id="dealBtn">
+        View Deals
+      </button>
+
+    </div>
+
+    <div class="deal-number">
+      40%
+    </div>
+
+  </div>
+
+</section>
+
+
+<section class="newsletter section" id="contact">
+
+  <div class="container newsletter-box">
+
+    <p class="eyebrow">
+      STAY IN THE LOOP
+    </p>
+
+    <h2>
+      Get the latest drops.
+    </h2>
+
+    <p>
+      New products, special offers and useful updates.
+    </p>
+
+    <form id="newsletterForm">
+
+      <input
+        type="email"
+        placeholder="Enter your email"
+        required>
+
+      <button type="submit">
+        Subscribe
+      </button>
+
+    </form>
+
+    <small id="newsletterMessage"></small>
+
+  </div>
+
+</section>
+
+</main>
+
+
+<footer>
+
+  <div class="container footer-content">
+
+    <div>
+
+      <a href="#home" class="logo">
+        SHOP<span>LY</span>
+      </a>
+
+      <p>
+        Modern shopping, made simple.
+      </p>
+
+    </div>
+
+
+    <div class="footer-links">
+
+      <a href="#shop">Shop</a>
+
+      <a href="#categories">
+        Categories
+      </a>
+
+      <a href="#deals">
+        Deals
+      </a>
+
+      <a href="#contact">
+        Contact
+      </a>
+
+    </div>
+
+  </div>
+
+
+  <p class="copyright">
+    © 2025 Shoply. Professional Web Projects.
+  </p>
+
+</footer>
+
+
+<div class="toast" id="toast">
+  Added to cart ✓
+</div>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
