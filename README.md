@@ -27,19 +27,3 @@ The design emphasizes clear product presentation, easy navigation, and a respons
 ## Responsive Design
 
 The website adapts to different screen sizes to provide a smooth browsing experience across mobile devices, tablets, and desktop computers.
-
-## Live Demo
-
-[View Live Website](#)
-
-## Screenshots
-
-Screenshots will be added here.
-
-## Project Type
-
-Personal / Demo Project
-
-## Note
-
-This project was created to demonstrate front-end web development skills, responsive design, and the ability to build modern website interfaces.
